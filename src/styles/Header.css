@@ -4,14 +4,25 @@
   padding: 20px;
   align-items: center;
   justify-content: space-between;
-  background-color: black;
   overflow-x: scroll;
+}
+
+.header::-webkit-scrollbar {
+  display: none;
+}
+.header {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .header__icon > .MuiSvgIcon-root {
   font-size: 30px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.header__icon--active > p {
+  display: inline-flex !important;
 }
 
 .header__icon > p {
@@ -23,7 +34,7 @@
   margin-left: auto;
 }
 .header__icon:hover > p {
-  display: inline;
+  display: inline-flex;
 }
 
 .header__icon {
