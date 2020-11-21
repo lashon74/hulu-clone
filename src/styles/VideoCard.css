@@ -4,6 +4,7 @@
   height: 400px;
   padding: 20px;
   transition: transform 100ms;
+  
 }
 .videoCard:hover {
   transform: scale(1.09);
@@ -13,6 +14,14 @@
   height: 300px;
   object-fit: contain;
   width: 500px;
+}
+
+.videoCard__stats {
+  display: none;
+}
+
+.videoCard:hover > .videoCard__stats {
+  display: inline;
 }
 
 .videoCard > h2 {
